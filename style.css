@@ -1,0 +1,223 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: rgba(5, 77, 79, 0.05);
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(5, 77, 79, 0.85);
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.form-box {
+    background: #fff;
+    width: 82vw;
+    max-width: 950px;
+    margin: 36px auto 0 auto;
+    padding: 28px 30px 18px 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(5,77,79,0.08);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    min-height: 390px;
+    border: 1.7px solid rgba(5, 77, 79, 0.12);
+}
+
+.form-box .logo {
+    flex: 0 0 160px;
+    text-align: center;
+    background: #f3fbfa;
+    border-radius: 10px 0 0 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: 100%;
+    border-right: 1px solid rgba(5, 77, 79, 0.07);
+}
+
+.form-isi {
+    flex: 1 1 0%;
+    margin-left: 36px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: rgba(5, 77, 79, 0.85);
+    color: #e8dccd;
+    font-size: 1.1em;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+td {
+    padding: 7px 4px;
+    vertical-align: top;
+    color: rgba(5, 77, 79, 0.92);
+}
+
+input[type="text"], input[type="password"], input[type="date"], select, textarea {
+    width: 97%;
+    padding: 8px 10px;
+    border: 1.6px solid rgba(5, 77, 79, 0.32);
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    background: #f8fafc;
+    transition: border 0.2s, background 0.2s;
+    color: rgba(5, 77, 79, 0.92);
+    font-family: inherit;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, textarea:focus, select:focus {
+    border: 2px solid rgba(5, 77, 79, 0.85);
+    outline: none;
+    background: #f3fbfa;
+}
+
+textarea {
+    min-height: 45px;
+    resize: vertical;
+}
+
+.ttl-group {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.ttl-input {
+    width: 29%;
+}
+
+.ttl-date {
+    width: 55%;
+    min-width: 120px;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.submit-btn {
+    background: rgba(5, 77, 79, 0.85);
+    color: #e8dccd;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 38px;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(5,77,79,0.06);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.submit-btn:hover, .submit-btn:active {
+    background: #438a8a;
+    color: #fffbe4;
+    box-shadow: 0 2px 14px rgba(5,77,79,0.09);
+}
+
+.captcha {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.19em;
+    letter-spacing: 2px;
+    background: #e8dccd;
+    color: rgba(5, 77, 79, 0.85);
+    border-radius: 5px;
+    padding: 4px 14px;
+    margin-top: 4px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    border: 1px solid rgba(5,77,79,0.14);
+    box-shadow: 0 1px 3px rgba(5,77,79,0.04);
+}
+
+.error {
+    color: #c62828;
+    font-size: 0.98em;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    background: #fdecea;
+    border-left: 4px solid #c62828;
+    padding: 4px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.hasil {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 26px 32px 20px 32px;
+    box-shadow: 0 4px 24px rgba(5,77,79,0.09);
+    color: rgba(5, 77, 79, 0.95);
+    text-align: left;
+    font-size: 1.12em;
+    font-family: inherit;
+}
+
+.hasil h2 {
+    color: rgba(5, 77, 79, 0.85);
+    margin-top: 0;
+    font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+    .form-box {
+        width: 97vw;
+        max-width: 99vw;
+        padding: 12px 6px 8px 6px;
+    }
+    .form-box .logo {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .form-isi {
+        margin-left: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    .form-box {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 16px 4vw 9px 4vw;
+        min-height: unset;
+    }
+    .form-box .logo {
+        border-radius: 10px 10px 0 0;
+        margin-bottom: 8px;
+        width: 100%;
+        height: auto;
+    }
+    .form-isi {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-box, .hasil {
+        width: 99vw;
+        padding: 8px 3vw;
+        min-width: unset;
+    }
+    th, td {
+        font-size: 0.97em;
+    }
+}
